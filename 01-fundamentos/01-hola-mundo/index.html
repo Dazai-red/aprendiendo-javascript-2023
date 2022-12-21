@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola mundo</title>
+</head>
+<body>
+    <p>Antes del script</p>
+    <!-- <script>
+        alert( 'Hola, mundo!' );
+    </script> -->
+    <p>...Después del script</p>
+    <!-- Scripts externos
+        Si tenemos un montón de código JavaScript, podemos ponerlo en un archivo separado.
+
+        Los archivos de script se adjuntan a HTML con el atributo src: 
+    -->
+    <script src="./script.js"></script>
+    <!-- También podemos dar una URL completa. Por ejemplo: -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.js"></script> -->
+
+    <!-- Para adjuntar varios scripts, usa varias etiquetas: -->
+    <script src="/js/script1.js"></script>
+    <script src="/js/script2.js"></script>
+    <!-- 
+
+        Como regla general, solo los scripts más simples se colocan en el HTML. Los más complejos residen en archivos separados.
+
+        La ventaja de un archivo separado es que el navegador lo descargará y lo almacenará en caché.
+
+        Otras páginas que hacen referencia al mismo script lo tomarán del caché en lugar de descargarlo, por lo que el archivo solo se descarga una vez.
+
+        Eso reduce el tráfico y hace que las páginas sean más rápidas.
+
+        Los atributos type y language no son necesarios.
+-->
+</body>
+</html>
