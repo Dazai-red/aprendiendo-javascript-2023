@@ -1,6 +1,6 @@
 # DOM (DOCUMENT OBJECT MODEL)
 Es toda la estructura HTML del documento.
-No es JavaScript, es una API (Aplication Programing Interface)
+No es JavaScript, es una API (Aplication Programing Interface) que se utiliza a través de JavaScript.
 
 ![](https://www.codingcreativo.it/wp-content/uploads/2019/03/dom-1024x653.jpg)
 
