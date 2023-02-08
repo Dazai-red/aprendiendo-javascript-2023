@@ -17,7 +17,7 @@ se trabaja con componentes.
 
 Para crear un evento lo haremos con la siguiente sintaxis: elemento al que queremos aplicar el evento
 añadimos un addEventListener con la nomenclatura del punto . y en el parentesis ('event', callback) event
-es el objeto al que hacemos referencia el evento y el callback es una función que vamos a ejecutar cuando
+es el nombre del evento al que hacemos referencia y el callback es una función que vamos a ejecutar cuando
 se dispare el evento.
 
 ![](./eventos.png)

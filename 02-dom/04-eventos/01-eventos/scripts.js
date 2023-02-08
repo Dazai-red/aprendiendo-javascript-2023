@@ -1,0 +1,94 @@
+/* 
+
+Eventos de ratón: 
+    click - cuando pulsamos el botón izquierdo del ratón
+    dblclick - cuando pulsamos dos veces seguidas el botón izquierdo del 
+    ratón
+    mouseenter - cuando entramos en la zona que tiene el evento
+    mouseleave - cuando salimos de la zona que tiene el evento
+    mousedown - cuando pulsamos el boton izquierdo del ratón
+    mouseup - cuando soltamos el boton izquierdo del ratón
+    mousemove - cuando movemos el ratón
+    
+Eventos de teclado:
+    keydown - cuando pulsamos una tecla
+    keyup - cuando soltamos una tecla
+    keypress - cuando pulsamos una tecla y no la soltamos
+
+*/
+
+
+const button = document.getElementById('button')
+const input = document.getElementById('input')
+const box = document.getElementById('box')
+
+/* Eventos sobre button */
+
+button.addEventListener('click', () => {
+    console.log('pulsaste sobre boton')
+})
+
+button.addEventListener('dblclick', () => {
+    console.log('pulsasate DOBLE CLICK sobre el boton')
+})
+
+/* Eventos sobre box */
+
+/*
+    No se recomienda dar estilos desde JavaScript 
+    lo suyo es añadir clases o quitarlas desde javascript
+    y desde css dar las propiedades que necesitemos
+    porque box.style.background lo que hace es añadir estilos
+    en línea, estos tienen mayor peso que la hoja de estilos
+*/
+
+box.addEventListener('mouseenter', () => {
+    // box.style.background="green"
+    /* 
+        nota es importante que tenga previamente una clase red o green 
+        o no funciona con replace tendriamos que hacer uso ade add y remove
+    */
+    box.classList.replace('red','green')
+})
+
+box.addEventListener('mouseleave', () => {
+    // box.style.background="red"
+    box.classList.replace('green','red')
+})
+
+/* Estos dos eventos se suelen utilizar para arrastrar y soltar api drag and drop */
+
+box.addEventListener('mousedown', () => {
+    console.log('HAS PULSADO EN LA CAJA')
+})
+
+box.addEventListener('mouseup', () => {
+    console.log('HAS SOLTADO EL BOTON IZQUIERDO EN LA CAJA')
+})
+
+
+box.addEventListener('mousemove', () => {
+    console.log('ESTAS MOVIENDO EL RATON EN LA CAJA')
+})
+
+
+/* Eventos sobre input (de teclado) */
+
+/* 
+    La principal gracia de hacer uso de los eventos 
+    de teclado es recoger que tecla estamos pulsando 
+    eso lo haremos con el objeto evento
+*/
+
+input.addEventListener('keydown', () => {
+    console.log('Has pulsado una tecla')
+})
+
+input.addEventListener('keyup', () => {
+    console.log('HAS SOLTADO UNA TECLA')
+})
+
+input.addEventListener('keypress', () => {
+    console.log('ESTAS PULSANDO UNA TECLA')
+})
+

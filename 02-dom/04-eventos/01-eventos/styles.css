@@ -1,0 +1,19 @@
+button{
+    display: block;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+}
+
+/* La forma correcta de cambiar estilos usando JavaScript es añadiendo y 
+quitando clases meidante eventos y classlist*/
+
+.red{
+    background: red;
+}
+
+.green{
+    background: green;
+}
