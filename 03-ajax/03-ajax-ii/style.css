@@ -1,0 +1,12 @@
+/* NO SE DEBE SELECCIONAR ETIQUETAS LO HAGO DE ESTA FORMA 
+PARA AGILIZAR PERO SE DEBEN DE USAR CLASES */
+
+table{
+    margin-top: 2em;
+    border-collapse: collapse;
+}
+
+th, td, tr{
+    border: 1px solid black;
+    text-align: center;
+}
