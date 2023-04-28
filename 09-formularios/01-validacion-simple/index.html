@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Forms I</title>
+</head>
+<body>
+    <h1>Forms I</h1>
+    <form action="https://www.google.es/" method="post" class="form" id="form">
+        <div class="form__field">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div class="form__field">
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" name="email">
+        </div>
+        <div id="gender" class="form__field">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="female">
+        </div>
+        <div class="form__field">
+            <label for="terms">I accept terms and conditions</label>
+            <input type="checkbox" name="terms" id="terms">
+        </div>
+        <!-- Importante: nunca poner al id submit porque da conflicto con input type submit -->
+        <button id="submitButton" disabled>Send</button>
+    </form>
+    <script src="scripts.js"></script>
+</body>
+</html>
