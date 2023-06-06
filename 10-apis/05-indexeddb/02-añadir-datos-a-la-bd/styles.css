@@ -1,0 +1,21 @@
+body{
+    background-color: #464646;
+    color: #fff;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.form{
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button{
+    border-radius: 20px;
+    border: none;
+    background-color: #ff9500;
+    padding: 0.3em 1.3em;
+    color: #fff;
+}
