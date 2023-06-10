@@ -1,0 +1,1 @@
+"use strict";var hola="hola a todos",prueba=function(o){console.log(o)};prueba(hola);
